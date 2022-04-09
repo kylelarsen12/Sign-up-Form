@@ -1,39 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vacation Time!</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <nav>
-        Enter the Contest for the Vacation of a Lifetime
-    </nav>
-    <main>
-        <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
-            <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
-                <!-- TODO: Create a "lastname" input with type "text" -->
-            </div>
-            <!-- TODO: Make fieldset and legend -->
-            <!-- Todo: Email Input -->
-            <!-- Todo: Street Address Input -->
-            <!-- Todo: City, State, and Zip Inputs -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <nav>Enter the Contest for the Vacation of a Lifetime</nav>
 
-            <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
-            <!-- TODO: Submit Button -->
-        </form>
+    <main>
+      <h2>Vacation Contest Sign-Up Form</h2>
+
+      <form method="GET" action="results.html">
+        <div>
+          <label for="firstname">Your First Name</label>
+          <input type="text" id="firstname" name="firstname" />
+          <label for="lastname">Your Last Name</label>
+          <input type="text" id="lastname" name="lastname" />
+        </div>
+
+        <!-- TODO: Make fieldset and legend -->
+        <fieldset>
+          <legend>Your Contact Info</legend>
+
+          <label for="Email">Email</label>
+          <input type="email" id="Email" name="email" />
+
+          <label for="address">Street Address</label>
+          <input type="text" id="address" name="address" />
+
+          <label for="city">City</label>
+          <input type="text" id="city" name="city" />
+
+          <label for="state">State</label>
+          <select name="state" id="state">
+            <option value="AK">Alaska</option>
+            <option value="FL">Florida</option>
+            <option value="CA">California</option>
+            <option value="ME">Maine</option>
+          </select>
+
+          <label for="zip">Zipcode</label>
+          <input type="text" id="zip" name="zip" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Your Preferences</legend>
+
+          <h3>Choose your location:</h3>
+
+          <div>
+            <label for="Reykjavik">Reykjavik</label>
+            <input
+              type="radio"
+              id="Reykjavik"
+              name="location"
+              value="Reykjavik"
+            />
+          </div>
+
+          <div>
+            <label for="Aruba">Aruba</label>
+            <input type="radio" id="Aruba" name="location" value="Aruba" />
+          </div>
+
+          <div>
+            <label for="Japan">Japan</label>
+            <input type="radio" id="Japan" name="location" value="Japan" />
+          </div>
+
+          <div>
+            <label for="new-zealand">New Zealand</label>
+            <input
+              type="radio"
+              id="new-zealand"
+              name="location"
+              value="New Zealand"
+            />
+          </div>
+
+          <div>
+            <h3>Favorite Color</h3>
+            <input type="color" id="color" name="color" />
+          </div>
+
+          <h3>Extras & Amenities</h3>
+
+          <div>
+            <label for="extras">Roof Access</label>
+            <input
+              type="checkbox"
+              id="extras"
+              name="extras"
+              value="roofaccess"
+            />
+          </div>
+
+          <div>
+            <label for="extras">Mini Bar</label>
+            <input type="checkbox" id="extras" name="extras" value="minibar" />
+          </div>
+
+          <div>
+            <label for="extras">Hot Tub</label>
+            <input type="checkbox" id="extras" name="extras" value="hottub" />
+          </div>
+
+          <div>
+            <label for="extras">Sauna</label>
+            <input type="checkbox" id="extras" name="extras" value="sauna" />
+          </div>
+        </fieldset>
+
+        <!-- TODO: Second fieldset -->
+        <!-- TODO: Radio buttons for selecting preferred destination -->
+        <!-- TODO: Color input for selecting favorite color -->
+        <!-- TODO: Checkboxes for selecting extra add-ons -->
+
+        <!-- TODO: Submit Button -->
+        <input type="submit" value="Enter the Contest!" />
+      </form>
     </main>
     <footer>
-        <h2>Resource Attributions</h2>
-        <p>All images provided for free use via <a href="https://unsplash.com/">Unsplash.com</a> whose generous <a href="https://unsplash.com/license">license details can be found here</a>.</p>
+      <h2>Resource Attributions</h2>
+      <p>
+        All images provided for free use via
+        <a href="https://unsplash.com/">Unsplash.com</a> whose generous
+        <a href="https://unsplash.com/license"
+          >license details can be found here</a
+        >.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
